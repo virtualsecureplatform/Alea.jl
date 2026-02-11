@@ -1,6 +1,21 @@
 using Distributions
 
 export gaussian_observe, gaussian_observe_enumerate, parametrised_flip, print_tree
+export conv_mode, set_conv_mode!
+
+const CONV_MODE = Ref{Symbol}(:fft)
+
+"Get the global convolution mode (:fft or :exact)."
+conv_mode() = CONV_MODE[]
+
+"Set the global convolution mode (:fft or :exact)."
+function set_conv_mode!(mode::Symbol)
+    if mode != :fft && mode != :exact
+        error("Unknown convolution mode: $mode. Use :fft or :exact.")
+    end
+    CONV_MODE[] = mode
+    return mode
+end
 
 ##################################
 # Gaussian observation methods
