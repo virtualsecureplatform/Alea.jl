@@ -1,7 +1,7 @@
 name = "Alea"
 uuid = "94eeadfc-1ba6-40b7-9ed8-dee71557d525"
-authors = ["Guy Van den Broeck <guyvdb@gmail.com>"]
 version = "0.1.0"
+authors = ["Guy Van den Broeck <guyvdb@gmail.com>"]
 
 [deps]
 BenchmarkTools = "6e4b80f9-dd63-53aa-95a3-0cdb28fa8baf"
@@ -10,6 +10,7 @@ Combinatorics = "861a8166-3701-5b0c-9a16-15d98fcdc6aa"
 DataStructures = "864edb3b-99cc-5e75-8d2d-829cb0a9cfe8"
 DirectedAcyclicGraphs = "1e6dae5e-d6e2-422d-9af3-452e7a3785ee"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
 Graphs = "86223c79-3864-5bf0-83f7-82e725a168b6"
 IRTools = "7869d1d1-7146-5819-86e3-90919afe41df"
 JLD2 = "033835bb-8acc-5ee8-8aae-3f567f8a3819"
@@ -23,13 +24,9 @@ SymPy = "24249f21-da20-56a4-8eb1-6a02cf4ae2e6"
 SymbolicNumericIntegration = "78aadeae-fbc0-11eb-17b6-c7ec0477ba9e"
 Symbolics = "0c5d862f-8b57-4792-8d23-62f2024744c7"
 
-[sources.CUDD]
-rev = "m1compat"
-url = "https://github.com/rtjoa/CUDD.jl.git"
-
-[sources.IRTools]
-rev = "loop-break-patch"
-url = "https://github.com/PoorvaGarg/IRTools.jl"
+[sources]
+CUDD = {rev = "m1compat", url = "https://github.com/rtjoa/CUDD.jl.git"}
+IRTools = {rev = "loop-break-patch", url = "https://github.com/PoorvaGarg/IRTools.jl"}
 
 [compat]
 BenchmarkTools = "1"
@@ -38,6 +35,7 @@ Combinatorics = "1"
 DataStructures = "0.18, 0.19"
 DirectedAcyclicGraphs = "0.1.1, 0.2"
 Distributions = "0.25"
+FFTW = "1.10.0"
 Graphs = "1"
 IRTools = "0.4"
 JLD2 = "0.6"
