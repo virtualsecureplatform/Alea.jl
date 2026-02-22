@@ -2,6 +2,8 @@
 CUDD = "345a2cc7-28d8-58b2-abdf-cff77ea7d7f1"
 Alea = "94eeadfc-1ba6-40b7-9ed8-dee71557d525"
 Distributions = "31c24e10-a181-5473-b8eb-7969acd0382f"
+DoubleFloats = "497a8b3b-efae-58df-a0af-a86822472b78"
+FFTW = "7a1cc6ca-52ef-59f5-83cd-3a7055c09341"
 IRTools = "7869d1d1-7146-5819-86e3-90919afe41df"
 Jive = "ba5e3d4b-8524-549f-bc71-e76ad9e9deed"
 Random = "9a3f8284-a2c9-5f02-9a11-845980a1fd5c"

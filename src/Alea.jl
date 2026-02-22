@@ -41,6 +41,7 @@ include("analysis/analysis.jl")
 include("dsl.jl")
 include("plot.jl")
 include("util.jl")
+include("convolve.jl")
 
 # add precompile statements here - keep it lightweight for main features
 @compile_workload begin
